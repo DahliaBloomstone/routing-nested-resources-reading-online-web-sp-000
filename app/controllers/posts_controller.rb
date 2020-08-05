@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+#updating index and show
+# updating posts controller because the resource we are requesting is related to posts 
   def index
     if params[:author_id]
       @posts = Author.find(params[:author_id]).posts
