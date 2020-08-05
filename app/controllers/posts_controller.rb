@@ -3,8 +3,8 @@ class PostsController < ApplicationController
 #updating index and show
 # updating posts controller because the resource we are requesting is related to posts
   def index
-    if params[:author_id] #user accessing index of a post by a certain author 
-      @posts = Author.find(params[:author_id]).posts
+    if params[:author_id] uthor 
+      @posts = Author.find(params[:author_id]).posts #user accessing index of a post by a certain author
     else
       @posts = Post.all #user accessing index of all posts
     end
