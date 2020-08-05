@@ -6,7 +6,7 @@ class PostsController < ApplicationController
     if params[:author_id] #if there is an :author_id in the params hash, user navigated to authors/:id/posts
       @posts = Author.find(params[:author_id]).posts #user accessing index of a post by a certain author
     else
-      @posts = Post.all #user accessing index of all posts. user navigated to authors/posts 
+      @posts = Post.all #user accessing index of all posts. user navigated to/posts 
     end
   end
 
