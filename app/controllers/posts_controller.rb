@@ -11,6 +11,7 @@ class PostsController < ApplicationController
     end
   end
 
+#posts#show will render the same information, data concerning a single post 
   def show
     @post = Post.find(params[:id])
   end
