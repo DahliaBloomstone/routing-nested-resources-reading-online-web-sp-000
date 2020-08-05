@@ -9,3 +9,6 @@ Rails.application.routes.draw do
   root 'posts#index'
 
 end
+
+
+#the point of nesting our routes is to dry up our code. 
